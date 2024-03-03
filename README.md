@@ -1,5 +1,7 @@
 # Internet Speed Test in a Container
 
+
+
 [![Docker](https://img.shields.io/badge/Docker%20Hub-robinmanuelthiel/speedtest-blue.svg?logo=docker)](https://hub.docker.com/r/robinmanuelthiel/speedtest/)
 
 Check your internet bandwidth using the [Speedtest CLI](https://www.speedtest.net/apps/cli) from a Docker container. You can configure the tool to run periodically and save the results to an InfluxDB for visualization or long-term records.
@@ -31,7 +33,7 @@ Your ping is 6.223 ms.
 
 ## Grafana and InfluxDB
 
-![Screenshot of a Grafana Dashboard with upload and download speed values](img/grafana.png)
+![Screenshot of a Grafana Dashboard with upload and download speed values](img/grafana_dashboard.png)
 
 For a full visualization and long term tracking, I recommend InfluxDB as a time-series database and Grafana as a dashboard engine. Both come in Docker containers, so the whole setup can be achieved by starting a Docker Compose file.
 
